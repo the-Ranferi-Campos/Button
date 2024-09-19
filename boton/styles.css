@@ -1,0 +1,80 @@
+.rubik-80s-fade-regular {
+    font-family: "Rubik 80s Fade", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.areaDeBotones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Opcional: Ajustar la curva de los contenedores, si es necesario */
+    border-radius: 20px;
+}
+
+/* Agregamos color, estilo, letra y distribución */
+
+button {
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+    font-size: xx-large;
+    background-color: blueviolet;
+    border: none; /* Eliminar borde por defecto */
+    border-radius: 30px; /* Curva de las esquinas */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+    transition: transform 0.3s ease; /* Efecto de transición suave al hover */
+}
+
+button:hover {
+    transform: scale(1.1); /* Efecto al pasar el cursor */
+}
+
+/* ESTILOS PARA CELULAR CON MEDIA FUENTE */
+@media only screen and (max-width: 600px) {
+    .areaDeBotones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* Opcional: Ajustar la curva de los contenedores, si es necesario */
+        border-radius: 20px;
+    }
+    
+    /* Agregamos color, estilo, letra y distribución */
+    
+    button {
+        margin: 20px;
+        width: 200px;
+        height: 100px;
+        font-size: xx-large;
+        background-color: blueviolet;
+        border: none; /* Eliminar borde por defecto */
+        border-radius: 30px; /* Curva de las esquinas */
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+        transition: transform 0.3s ease; /* Efecto de transición suave al hover */
+    }
+    
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    .button-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 3 */
+    }
+  
+    .button {
+      padding: 15px 30px;
+      font-size: 16px;
+    }
+  }
+  
+/*
+tarea
+investigar medidas de una tableta
+realizar ajustes de boton en tableta
+cambia a color verde en tablata
+
+
+*/
